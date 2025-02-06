@@ -116,13 +116,6 @@ cat >> "/etc/skel/.config/openbox/autostart" <<- EOL
 	sed -i -e '/## Help-App-Run-Once/Q' "\$HOME"/.config/openbox/autostart
 EOL
 
-sed -i -e '/## Welcome-App-Run-Once/Q' /etc/skel/.config/bspwm/bspwmrc
-cat >> "/etc/skel/.config/bspwm/bspwmrc" <<- EOL
-	## Help-App-Run-Once
-	archcraft-help &
-	sed -i -e '/## Help-App-Run-Once/Q' "\$HOME"/.config/bspwm/bspwmrc
-EOL
-
 ## -------------------------------------------------------------- ##
 
 ## Make it executable
@@ -132,8 +125,8 @@ chmod +x /etc/skel/.screenlayout/my-layout.sh
 rm -rf /usr/share/icons/default
 
 ## Update xdg-user-dirs for bookmarks in thunar and pcmanfm
-runuser -l liveuser -c 'xdg-user-dirs-update'
-runuser -l liveuser -c 'xdg-user-dirs-gtk-update'
+#runuser -l liveuser -c 'xdg-user-dirs-update'
+#runuser -l liveuser -c 'xdg-user-dirs-gtk-update'
 xdg-user-dirs-update
 xdg-user-dirs-gtk-update
 
