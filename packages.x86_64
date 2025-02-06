@@ -31,10 +31,8 @@ ethtool
 exfatprogs
 f2fs-tools
 fatresize
-foot-terminfo
 fsarchiver
 #gnu-netcat
-gpart
 gpm
 gptfdisk
 #grml-zsh-config
@@ -70,23 +68,18 @@ mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
 modemmanager
-mtools
-nano
 nbd
 ndisc6
 nfs-utils
 nilfs-utils
 nmap
 ntfs-3g
-nvme-cli
 open-iscsi
 open-vm-tools
 openconnect
 openpgp-card-tools
 openssh
-openvpn
 partclone
-parted
 partimage
 pcsclite
 ppp
@@ -96,7 +89,6 @@ pv
 refind
 reflector
 rp-pppoe
-rsync
 rxvt-unicode-terminfo
 screen
 sdparm
@@ -118,9 +110,7 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vim
 #virtualbox-guest-utils-nox
-vpnc
 wireless-regdb
 wireless_tools
 wpa_supplicant
@@ -178,10 +168,8 @@ nvidia-settings
 ## Networking
 networkmanager
 networkmanager-openconnect
-networkmanager-openvpn
 networkmanager-pptp
 networkmanager-strongswan
-networkmanager-vpnc
 network-manager-sstp
 nm-connection-editor
 network-manager-applet
@@ -220,16 +208,6 @@ gst-plugins-good
 gst-plugins-ugly
 gst-plugins-bad
 
-## Print
-cups
-cups-pdf
-cups-filters
-ghostscript
-gsfonts
-foomatic-db-engine
-foomatic-db
-gutenprint
-
 ## Installer ------------------------------
 
 ## Calamares
@@ -267,12 +245,10 @@ thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
 viewnior
-atril
 
 # Media
 mpc
 mpd
-ncmpcpp
 mplayer
 
 # Utilities
@@ -289,7 +265,6 @@ inotify-tools
 jq
 light
 meld
-nitrogen
 pastel
 picom
 plank
@@ -298,7 +273,6 @@ polybar
 python-pywal
 #rofi
 maim
-simplescreenrecorder
 slop
 timeshift
 udisks2
