@@ -121,8 +121,7 @@ archcraft-hooks-grub
 archcraft-grub-theme
 
 ## Splash Screen ------------------------------
-archcraft/plymouth
-archcraft-plymouth-theme
+plymouth
 
 ## Archcraft Specific ------------------------------
 archcraft-hooks
@@ -208,8 +207,8 @@ gst-plugins-bad
 calamares
 
 ## ABIF
-archcraft-installer
-archcraft-install-scripts
+#archcraft-installer
+#archcraft-install-scripts
 
 ## QT Style
 qt6ct
@@ -285,18 +284,17 @@ archcraft-openbox
 
 # Archcraft Packages
 archcraft-cursors
-archcraft-themes
 archcraft-openbox-themes
 archcraft-fonts
 archcraft-skeleton
 archcraft-dunst-icons
 archcraft-funscripts
 archcraft-omz
-archcraft-arandr
+#archcraft-arandr
 archcraft-randr
 archcraft-scripts
 archcraft-config-qt
-archcraft-hooks-extra
+#archcraft-hooks-extra
 archcraft-hooks-zsh
 
 ## Functionality ------------------------------
@@ -392,5 +390,5 @@ openlp
 zoom
 teamviewer
 boost
-
+boost-libs
 ## EOF ------------------------------
