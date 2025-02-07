@@ -205,7 +205,6 @@ gst-plugins-bad
 ## Installer ------------------------------
 
 ## Calamares
-boost
 calamares
 
 ## ABIF
@@ -392,5 +391,6 @@ python-pyodbc
 openlp
 zoom
 teamviewer
+boost
 
 ## EOF ------------------------------
