@@ -293,22 +293,16 @@ archcraft-openbox
 
 # Archcraft Packages
 archcraft-cursors
-archcraft-icons
 archcraft-themes
 archcraft-openbox-themes
 archcraft-fonts
 archcraft-skeleton
-archcraft-about
 archcraft-dunst-icons
 archcraft-funscripts
-archcraft-neofetch
 archcraft-omz
 archcraft-arandr
 archcraft-randr
 archcraft-scripts
-archcraft-ranger
-archcraft-config-geany
-archcraft-config-music
 archcraft-config-qt
 archcraft-hooks-extra
 archcraft-hooks-zsh
@@ -382,7 +376,6 @@ htop
 nethogs
 ncdu
 powertop
-ranger
 vim
 
 ## AUR Packages
