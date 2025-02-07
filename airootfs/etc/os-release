@@ -1,0 +1,14 @@
+NAME="CreeleLinux"
+PRETTY_NAME="CreeleLinux"
+ID=creelelinux
+ID_LIKE=creele
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://creele.org"
+DOCUMENTATION_URL="https://creele.org"
+SUPPORT_URL="https://creele.org"
+BUG_REPORT_URL="https://creele.org"
+PRIVACY_POLICY_URL="https://creele.org"
+LOGO=creelelinux
+IMAGE_ID=creelelinux
+IMAGE_VERSION=2025.02.07

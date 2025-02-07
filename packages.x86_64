@@ -1,5 +1,6 @@
 # Arch Packages ------------------------------
 #alsa-utils
+nitrogen
 amd-ucode
 arch-install-scripts
 archinstall
@@ -397,5 +398,13 @@ perl-linux-desktopfiles
 rofi-lbonn-wayland-git
 xfce-polkit
 yay
+
+## Custom repo
+brave-bin
+butt
+python-pyodbc
+openlp
+zoom
+teamviewer
 
 ## EOF ------------------------------
