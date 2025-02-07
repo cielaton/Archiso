@@ -18,6 +18,10 @@ airootfs_image_tool_options=('-comp' 'xz' '-Xbcj' 'x86' '-b' '1M' '-Xdict-size' 
 bootstrap_tarball_compression=('zstd' '-c' '-T0' '--auto-threads=logical' '--long' '-19')
 file_permissions=(
   ["/etc/calamares/launch.sh"]="0:0:777"
+  ["/etc/calamares/post_install.sh"]="0:0:777"
+  ["/etc/calamares/post_install_nvidia.sh"]="0:0:777"
+  ["/etc/calamares/chrooted_post_install.sh"]="0:0:777"
+  ["/etc/calamares/chrooted_post_install_nvidia.sh"]="0:0:777"
   ["/etc/shadow"]="0:0:400"
   ["/etc/gshadow"]="0:0:0400"
   ["/etc/sudoers.d"]="0:0:750"
