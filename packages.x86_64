@@ -213,7 +213,6 @@ gst-plugins-bad
 ## Calamares
 boost
 calamares
-calamares-config
 
 ## ABIF
 archcraft-installer
