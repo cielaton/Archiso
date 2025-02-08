@@ -11,6 +11,8 @@ set -e -u
 cp -r /etc/simple-image /usr/share/plymouth/themes/
 plymouth-set-default-theme -R simple-image
 
+# Copy the calamares desktop file
+cp /etc/calamares.desktop /usr/share/applications/
 
 ## Modify /etc/mkinitcpio.conf file
 sed -i '/etc/mkinitcpio.conf' \
@@ -127,6 +129,7 @@ cp /etc/autostart /home/liveuser/.config/openbox/autostart
 
 # remove archcraft icon 
 sed -i '/archcraft/d' /home/liveuser/.config/openbox/themes/default/polybar/config.ini
+
 
 
 ## -------------------------------------------------------------- ##
