@@ -272,30 +272,6 @@ _clean_target_system() {
 
 _perform_various_stuff() {
 
-  # Remove archcraft mirror
-  sed -i '/archcraft/d' /etc/pacman.conf
-  sed -i '/SigLevel/d' /etc/pacman.conf
-
-  # Remove the launch script on startup
-  sed -i '/installer/d' $new_user/.config/openbox/autostart
-  sed -i '/calamares/d' $new_user/.config/openbox/autostart
-
-  # Add auto update command 
-  echo "pacman -Syu --noconfirm &" >> $new_user/.config/openbox/autostart
-
-  sed -i '/archcraft/d' /home/liveuser/.config/openbox/themes/default/polybar/config.ini
-
-  # Install Getscreen
-  wget -P /usr/bin/ https://getscreen.me/download/getscreen.me
-  chmod 777 /usr/bin/getscreen.me
-  touch /usr/share/applications/Getscreen.desktop
-  echo "[Desktop Entry]
-  Encoding=UTF-8
-  Version=1.0
-  Type=Application
-  Terminal=false
-  Exec=/usr/bin/getscreen.me
-  Name=Getscreen" > /usr/share/appdata/Getscreen.desktop
 
 	# Copy grub theme to boot directory
 	echo "+---------------------->>"
@@ -348,6 +324,32 @@ _perform_various_stuff() {
 }
 
 ## -------- ## Execute Script ## -----------------
+
+# Remove archcraft mirror
+sed -i '/archcraft/d' /etc/pacman.conf
+sed -i '/SigLevel/d' /etc/pacman.conf
+
+# Remove the launch script on startup
+sed -i '/installer/d' /home/$new_user/.config/openbox/autostart
+sed -i '/calamares/d' /home/$new_user/.config/openbox/autostart
+
+# Add auto update command 
+echo "pacman -Syu --noconfirm &" >> /home/$new_user/.config/openbox/autostart
+
+sed -i '/archcraft/d' /home/$new_user/.config/openbox/themes/default/polybar/config.ini
+
+# Install Getscreen
+wget -P /usr/bin/ https://getscreen.me/download/getscreen.me
+chmod 777 /usr/bin/getscreen.me
+touch /usr/share/applications/Getscreen.desktop
+echo "[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/usr/bin/getscreen.me
+Name=Getscreen" > /usr/share/applications/Getscreen.desktop
+
 _manage_systemd_services
 _remove_vbox_pkgs
 _remove_vmware_pkgs
