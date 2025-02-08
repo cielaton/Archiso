@@ -6,6 +6,12 @@ set -e -u
 
 ## -------------------------------------------------------------- ##
 
+
+# Copythe simple-image plymouth theme
+cp -r /etc/simple-image /usr/share/plymouth/themes/
+plymouth-set-default-theme -R simple-image
+
+
 ## Modify /etc/mkinitcpio.conf file
 sed -i '/etc/mkinitcpio.conf' \
 	-e "s/microcode/microcode plymouth/g" \
@@ -109,12 +115,19 @@ done
 ## -------------------------------------------------------------- ##
 
 ## Don't launch welcome app on installed system, launch Help instead
-sed -i -e '/## Welcome-App-Run-Once/Q' /etc/skel/.config/openbox/autostart
-cat >> "/etc/skel/.config/openbox/autostart" <<- EOL
-	## Help-App-Run-Once
-	archcraft-help &
-	sed -i -e '/## Help-App-Run-Once/Q' "\$HOME"/.config/openbox/autostart
-EOL
+# sed -i -e '/## Welcome-App-Run-Once/Q' /etc/skel/.config/openbox/autostart
+# cat >> "/etc/skel/.config/openbox/autostart" <<- EOL
+# 	## Help-App-Run-Once
+# 	archcraft-help &
+# 	sed -i -e '/## Help-App-Run-Once/Q' "\$HOME"/.config/openbox/autostart
+# EOL
+
+# Replace the autostart file 
+cp /etc/autostart /home/liveuser/.config/openbox/autostart
+
+# remove archcraft icon 
+sed -i '/archcraft/d' /home/liveuser/.config/openbox/themes/default/polybar/config.ini
+
 
 ## -------------------------------------------------------------- ##
 
@@ -155,3 +168,5 @@ for app in "${apps[@]}"; do
 done
 
 ## -------------------------------------------------------------- ##
+
+

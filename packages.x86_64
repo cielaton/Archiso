@@ -1,5 +1,6 @@
 # Arch Packages ------------------------------
 #alsa-utils
+dbus-glib
 nitrogen
 amd-ucode
 arch-install-scripts
@@ -228,7 +229,6 @@ archcraft-sddm-theme
 kitty
 
 # Apps
-firefox
 geany
 geany-plugins
 thunar
@@ -283,8 +283,6 @@ archcraft-openbox
 #archcraft-bspwm
 
 # Archcraft Packages
-archcraft-cursors
-archcraft-openbox-themes
 archcraft-fonts
 archcraft-skeleton
 archcraft-dunst-icons
